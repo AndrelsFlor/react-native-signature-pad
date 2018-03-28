@@ -16,7 +16,11 @@ var content = script =>
       -ms-transform:rotate(-90deg)  translate(-100%, 0px);
       -webkit-transform:rotate(-90deg)  translate(-100%, 0px);*/
     }
-
+     html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
     </style>
     <body>
       <canvas style="margin-left: 0; margin-top: 0;"></canvas>
