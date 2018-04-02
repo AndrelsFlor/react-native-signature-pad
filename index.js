@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, WebView, StyleSheet } from 'react-native';
+import { View, WebView, StyleSheet, ViewPropTypes } from 'react-native';
 
 import htmlContent from './injectedHtml';
 import injectedSignaturePad from './injectedJavaScript/signaturePad';
@@ -16,7 +16,7 @@ class SignaturePad extends Component {
     defaultWidth: PropTypes.number,
     onChange: PropTypes.func,
     onError: PropTypes.func,
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     penColor: PropTypes.string,
     dataURL: PropTypes.string
   };
